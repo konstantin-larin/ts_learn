@@ -14,7 +14,7 @@ import Rook from "../models/figures/Rook.ts";
 import Queen from "../models/figures/Queen.ts";
 import {Figure} from "../models/figures/Figure.ts";
 
-function WhiteSet({goodPawn, setGoodPawn}) {
+const WhiteSet: FC<ChooseFigureProps> = ({goodPawn, setGoodPawn}) => {
     return (
         <>
             <div className={'choose-figure-item'} onClick={() => {
@@ -48,8 +48,7 @@ function WhiteSet({goodPawn, setGoodPawn}) {
         </>
     )
 }
-
-function BlackSet({goodPawn, setGoodPawn}) {
+const BlackSet: FC<ChooseFigureProps> = ({goodPawn, setGoodPawn}) => {
     return (
         <>
             <div className={'choose-figure-item'}
